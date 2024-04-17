@@ -23,5 +23,13 @@ class Solution:
 
 assert Solution().checkValidString("()") is True
 assert Solution().checkValidString("(*)") is True
-assert Solution().checkValidString("(((((*(()((((*((**(((()()*)()()()*((((**)())*)*)))))))(())(()))())((*()()(((()((()*(())*(()**)()(())") is False
-assert Solution().checkValidString("(((((()*)(*)*))())())(()())())))((**)))))(()())()") is False
+assert (
+    Solution().checkValidString(
+        "(((((*(()((((*((**(((()()*)()()()*((((**)())*)*)))))))(())(()))())((*()()(((()((()*(())*(()**)()(())"
+    )
+    is False
+)
+assert (
+    Solution().checkValidString("(((((()*)(*)*))())())(()())())))((**)))))(()())()")
+    is False
+)
