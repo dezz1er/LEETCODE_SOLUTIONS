@@ -18,8 +18,7 @@ class Solution:
             combo, length = que.popleft()
 
             if combo == target:
-                return length   
-
+                return length
             if combo not in deadends:
                 for i in range(len(combo)):
                     for delta in [-1, 1]:
